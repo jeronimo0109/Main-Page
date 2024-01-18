@@ -1,22 +1,27 @@
 body{
     margin: 0;
     padding: 0;
+    font-family: 'poppins', sans-serif;
+    overflow-x: hidden;
+    background: linear-gradient(to bottom,#0f0c29,#302b63, #24243e);
     display: flex;
     min-height: 100vh;
     justify-content: center;
     align-items: center;
-    font-family: 'jost', sans-serif;
-    background: linear-gradient(to bottom,#0f0c29,#302b63, #24243e);
 }
 
-.main{
+.login-container{
+    position: absolute;
+    overflow: 2;
     width: 350px;
     height: 500px;
     background: red;
     overflow: hidden;
-    background: url("/img/2.jpg") no-repeat center / cover;
+    background: url("/img/3.jpg") no-repeat center / cover;
     border-radius: 10px;
     box-shadow: 5px 20px 50px #000;
+    transition: opacity 0.5s ease-in-out;
+    z-index: 2;
 }
 
 #chk {
@@ -30,7 +35,7 @@ body{
 }
 
 label{
-    color: #fff;
+    color: #0f0c29;
     font-size: 2.3em;
     justify-content: center;
     display: flex;
@@ -59,7 +64,7 @@ button {
     margin: 10px auto;
     justify-content: center;
     display: block;
-    background: #573b8a;
+    background: #033165;
     color: #fff;
     font-size: 1em;
     font-weight: bold;
@@ -72,7 +77,7 @@ button {
 }
 
 button:hover {
-    background: #6d44b8;
+    background: #2f4efd;
 }
 
 .login {
@@ -84,7 +89,7 @@ button:hover {
 }
 
 .login label{
-    color: #573b8a;
+    color: #0f0c29;
     transform: scale(.6);
 }
 
@@ -98,4 +103,66 @@ button:hover {
 
 #chk:checked ~ .signup label {
     transform: scale(.6);
+}
+
+.disguise{
+    opacity: 0;
+}
+
+.appear {
+    opacity: 1;
+}
+
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 90%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 2em;
+    color: #fff4f4;
+    pointer-events: none;
+}
+
+.navigation a {
+    text-decoration: none;
+    color: #fff4f4;
+    padding: 6px 15px;
+    border-radius: 20px;
+    margin: 0 10px;
+    font-weight: 600;
+}
+
+.navigation a:hover {
+    background: #fff4f4;
+    color: #0f0c29;
+}
+
+.parallax {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 400px;
+}
+
+#text {
+    position: absolute;
+    font-size: 5em;
+    color: #fff4f4;
+}
+
+.parallax img {
+    margin-top: 500px;
+    margin-left: 200px;
+    top: 0;
+    pointer-events: none;
 }
