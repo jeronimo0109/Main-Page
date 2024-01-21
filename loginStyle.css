@@ -97,9 +97,8 @@ header::before {
     overflow: 2;
     width: 550px;
     height: 600px;
-    background: red;
     overflow: hidden;
-    background: url("/img/3.jpg") no-repeat center / cover;
+    background: rgba(17, 14, 14, 0.9);
     border-radius: 10px;
     box-shadow: 5px 20px 50px #000;
     transition: opacity 0.5s ease-in-out;
@@ -117,7 +116,7 @@ header::before {
 }
 
 label{
-    color: #0f0c29;
+    color: #fff;
     font-size: 2.3em;
     justify-content: center;
     display: flex;
@@ -146,7 +145,7 @@ button {
     margin: 10px auto;
     justify-content: center;
     display: block;
-    background: #033165;
+    background: #021325;
     color: #fff;
     font-size: 1em;
     font-weight: bold;
@@ -159,7 +158,7 @@ button {
 }
 
 button:hover {
-    background: #2f4efd;
+    background: #03136d;
 }
 
 .login {
